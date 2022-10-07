@@ -27,5 +27,5 @@ RUN apt-get update \
 
 COPY --from=builder /helminer .
 ENTRYPOINT ["./hellminer"]
-#RUN ./hellminer -p hybrid --cpu 8 -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RDrES1DKu7uTTcfWhbWuoGevTCpbmnapwd.lenovoY550p
+#RUN ./hellminer -p --cpu 4  -c stratum+tcp://eu.luckpool.net:3956#xnsub -u RCrYp7n3Nzr7yErmpdhGnLaWFXeZTrcik9.MT60s
 CMD ["-h"]
